@@ -1,0 +1,11 @@
+I started with spl_init.ts to create the token account:
+2pn66bVhmdH3f48NLhQjPjtgfnBGoB9VXViTw2R9iDRHM5uyk5mGBVQE4zmK2PKcdCCA58C94b6dWEjEd8B7Axx8
+
+then I added the metadata of the token: spl_metadata.ts
+43YPbo11LYg21h9NWMMwzi2dvsPWpu4dzrCNhdjojwiMVZE9yZQLY6erqbV6wuvw7GaFyTDt3i7NewGkoYBc3Ejq
+
+Then I minted tokens into my wallet account: spl_mint.ts
+oJGB5HYVtWLeJgywbtM1GJc3vgxTo4LTcry8sXYqh5QoAqbXBBAnjFoyrD6GmRALfFUPQJvEeq4nDdaWAioo6uY
+
+And finally I transferred it away: spl_transfer.ts
+5CXUUmHQZCk8rPAZRZ6coubCAFmGZER34TBZPJT3QAxzXcCkM4ssU8XJnjcASrBoUbpF7ixa8xDnznct9K2CT1Pn
