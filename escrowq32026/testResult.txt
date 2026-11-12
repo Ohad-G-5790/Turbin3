@@ -1,0 +1,119 @@
+ohad@OhadDeGrate:~/solana/Turbin3/Week 2/tubine-escrow$ cargo test -- --nocapture
+warning: unused import: `anchor_lang::prelude::*`
+ --> programs/escrowq32026/src/lib.rs:6:5
+  |
+6 | use anchor_lang::prelude::*;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `seed`
+  --> programs/escrowq32026/src/lib.rs:55:9
+   |
+55 |         seed: u64,
+   |         ^^^^ help: if this is intentional, prefix it with an underscore: `_seed`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: `escrowq32026` (lib) generated 2 warnings (run `cargo fix --lib -p escrowq32026` to apply 2 suggestions)
+   Compiling escrowq32026 v0.1.0 (/home/ohad/solana/Turbin3/Week 2/tubine-escrow/programs/escrowq32026)
+warning: unused variable: `tx`
+   --> programs/escrowq32026/tests/mod.rs:321:9
+    |
+321 |     let tx = program.send_transaction(transaction).unwrap();
+    |         ^^ help: if this is intentional, prefix it with an underscore: `_tx`
+    |
+    = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused variable: `tx`
+   --> programs/escrowq32026/tests/mod.rs:480:13
+    |
+480 |         let tx = program.send_transaction(transaction).unwrap();
+    |             ^^ help: if this is intentional, prefix it with an underscore: `_tx`
+
+warning: `escrowq32026` (test "mod") generated 2 warnings (run `cargo fix --test "mod" -p escrowq32026` to apply 2 suggestions)
+warning: `escrowq32026` (lib test) generated 2 warnings (2 duplicates)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.16s
+     Running unittests src/lib.rs (target/debug/deps/escrowq32026-e2ac2481bbc86188)
+
+running 1 test
+test test_id ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/mod.rs (target/debug/deps/mod-b91761076190e668)
+
+running 3 tests
+Mint A: Bc7vTjQ38JKhDU66A3vdKn6mqTwWHAP4snMJiDHhuQGi
+
+Mint A: 5mZ3PSVf1hhG9drs6Va547z3VQRWKneL7tk1Cp5bdocd
+
+Mint A: 4H5DDdCcWuXwPcKShcfRgP3aveZdoGSFkWE3fx9quLuB
+
+Mint B: 2LPuiTn8FGG5KiAnG3PjmM4jz7xJZauX234qVYxoLG34
+
+Mint B: C6KK2Y7S2D6HdCgRk1v86HJiDq9GggkZYkVfDztwb3fz
+
+Maker ATA A: 9zAsrWVQWeLMWM8rZNUQpkqBbQPC3Ldug1vKvCwXeAHE
+
+Escrow PDA: 7aS8UDCRWs5TvfLE5R4exgnEg768oc9CdbGTrj9wGcj3
+
+Vault PDA: CMsqBQ6512fCDy7bJDybtAqmBnTKEWxvDruAfhb2uCUo
+
+Mint B: 21jmuagKEQUEWjnU6KXDHjbmPSDaBT4gqENRsg8BmCLV
+
+Maker ATA B: D5VqfDKSWVMNR1unJhH8XpnW7QcHJ8ocHcaBgv8ju3c8
+
+Maker ATA B: 5FpsD22FDkL61sQmjZgS3ppSZnQayyvCjgN3EVqdMoAr
+
+Maker ATA A: Hp39YX4976FMf3tVGCYXs9CocUBqKSSscbyLeHzqHxbe
+
+
+
+Make transaction sucessfull
+CUs Consumed: 47566
+Tx Signature: L3iGVn2vs4VK67jJMtQkCRkRYVvGdVfYCiXFeEg9uT2DN8u1RjLf1Rtcahm1BCrJKmrJY5C4mJcFbQ4yTVy45GU
+Maker ATA A: 8AvKj5wYWT1YM3XJ8jYRgPnfxNWdtvbbVJuzwERRt1oz
+
+Taker ATA A: HtfTifehFnmPQ5WEu3jzNuD8BDuQHrZKcaefRvmHtJyW
+
+
+
+Refund transaction sucessful
+CUs Consumed: 23782
+Tx Signature: 2vozLL7jLQwo5fpQWrCnWecmQHk6T8xEw5YR1gx7appsjGTdvEcTFw6B7k4iTYSaXCZn5GrkGcVLMJy9Lx2L1hZQ
+test test_make_and_refund ... ok
+Taker ATA A: 8jLzdFmQK8ZZpVCSbpHcFNDEDmXszwfrSJLiXCSxfzkk
+
+Taker ATA B: A1u6NrY9uRxzKFcKy6ieKY7Utw8ENDZunAGUZoSt9HFW
+
+Escrow PDA: 2whZh8zdzx6zqFF8HFujbBJUE8LJgDKMedSFzFCfT8RX
+
+Vault PDA: Dqt5M8y8dcQuph19pYSQQ7AbwGs8zroNVNTvbag4q8GF
+
+Taker ATA B: 6KURTAghWjkaZcU97GuDFAQRN5jDpTNfQo9aYm1RB3YL
+
+Escrow PDA: 8pcBjY19YiPAuxT2ZxxoveaUqPWkQyo78MPdhGuXd9p5
+
+Vault PDA: AT4WgxJVaxzFZCpxdiZvbWiVMsf9woYQDHa8CQuPut3x
+
+
+
+Make transaction sucessfull
+CUs Consumed: 53566
+Tx Signature: 41BDQVGHtWq53jwzGyzJ9GpamNX9PForKqe9DyQ9GgV6Lox7qieycUizQKb9Jtj4dWpE3j2knCkNvVhezYtEgWbt
+
+
+Make transaction sucessfull
+CUs Consumed: 49066
+Tx Signature: RGzn51QkrzqvavQcLrq1AameT3FiLUZKbsBufXuq1eyn3Mf7rD2WaWHPbxX5pZo8smh66uNHn52qoStaagsvCE2
+test test_make_and_update ... ok
+test test_make_and_take ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.30s
+
+   Doc-tests escrowq32026
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
